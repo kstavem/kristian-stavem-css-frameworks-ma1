@@ -1,0 +1,20 @@
+$primary: #c32c72;
+$light: #f4f3ee;
+
+$colors: (
+    primary: $primary,
+    bg-body: #e5e5e5,
+    lightgrey: #8D8D8D,
+);
+
+@function myColor($color) {
+    @return map-get($colors, $color);
+};
+
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-secondary: 'Archivo Narrow', sans-serif;
+
+
+
+
+
