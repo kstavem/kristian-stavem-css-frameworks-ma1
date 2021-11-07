@@ -1,8 +1,11 @@
 $primary: #c32c72;
 $light: #f4f3ee;
+$tablet-width: 1200px;
 
 $colors: (
     primary: $primary,
+    light: $light,
+    white: #fff,
     bg-body: #e5e5e5,
     lightgrey: #8D8D8D,
 );

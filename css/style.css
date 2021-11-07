@@ -20,6 +20,8 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #c32c72;
+  --light: #f4f3ee;
+  --white: #fff;
   --bg-body: #e5e5e5;
   --lightgrey: #8D8D8D;
   --primary: #c32c72;
@@ -10858,8 +10860,43 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #e5e5e5;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box-container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .box-container {
+    max-width: 700px;
+  }
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 nav .navbar-brand {
@@ -10874,5 +10911,63 @@ nav .link--active {
 nav .nav-link {
   text-transform: uppercase;
   font-family: "Archivo Narrow", sans-serif;
+}
+
+.box {
+  height: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 12px #b6b5b5;
+          box-shadow: 0px 6px 12px #b6b5b5;
+}
+
+.box--light {
+  background-color: #f4f3ee;
+  border: 3px solid #f4f3ee;
+}
+
+.box--purple {
+  background-color: #c32c72;
+  border: 3px solid #f4f3ee;
+}
+
+.box--purpleborder {
+  background-color: #fff;
+  border: 3px solid #c32c72;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+}
+
+footer p {
+  margin: .2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

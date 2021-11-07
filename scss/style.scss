@@ -2,11 +2,6 @@
 
  @import "partials/custom";
 
-
- 
-
-
-
  /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -52,6 +47,8 @@
  @import "partials/bootstrap/utilities";
  @import "partials/bootstrap/print";
 
+ @import "partials/mixin";
  @import "partials/base";
  @import "partials/navigation";
- 
+ @import "partials/box";
+ @import "partials/footer";
